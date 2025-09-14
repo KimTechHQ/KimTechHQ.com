@@ -1,24 +1,26 @@
 {{/* Usage:
-  {{< button href="https://example.com" text="View project" target="_blank" rel="noopener" class="primary" >}}
+  Inline:  {{< button href="https://example.com" text="View project" class="primary" >}}
+  Paired:  {{< button href="https://example.com" class="primary" >}}View project{{< /button >}}
+  Positional text (fallback): {{< button "https://example.com" >}}View project{{< /button >}}
 */}}
-{{ $href := .Get "href" | default "#" }}
-{{ $text := .Get "text" | default "Learn more" }}
-{{ $target := .Get "target" | default "" }}
-{{ $rel := .Get "rel" | default "" }}
-{{ $class := .Get "class" | default "btn" }}
+
+{{- $href := or (.Get "href") (.Get 0) "#" -}}
+{{- $text := or (.Get "text") (.Inner | markdownify) "Learn more" -}}
+{{- $class := or (.Get "class") "btn" -}}
+{{- $target := .Get "target" -}}
+{{- $rel := or (.Get "rel") (cond (eq $target "_blank") "noopener" "") -}}
 
 <a href="{{ $href }}"
    class="{{ $class }}"
-   {{ if $target }}target="{{ $target }}"{{ end }}
-   {{ if $rel }}rel="{{ $rel }}"{{ end }}>
-  {{ $text }}
+   {{ with $target }}target="{{ . }}"{{ end }}
+   {{ with $rel }}rel="{{ . }}"{{ end }}>
+  {{- $text -}}
 </a>
 
 <style>
-/* basic button styling (tweak/replace with your theme’s classes) */
 a.btn, a.primary {
-  display:inline-block;padding:.6rem 1rem;border-radius:.5rem;
-  text-decoration:none;font-weight:600;border:1px solid currentColor
+  display:inline-block; padding:.6rem 1rem; border-radius:.5rem;
+  text-decoration:none; font-weight:600; border:1px solid currentColor
 }
-a.primary { background:#111;color:#fff; }
+a.primary { background:#111; color:#fff; }
 </style>

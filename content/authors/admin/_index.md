@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Field Technician
+role: Field Technician | Cybersecurity Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -48,10 +48,10 @@ profiles:
     url: https://orcid.org/0000-0002-1825-0097
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Network Security
+  - Incident Response
+  - Automation & Scripting
+  - IT Infrastructure
 
 education:
   - area: PhD Computer Science (AI Focus)
@@ -136,7 +136,7 @@ languages:
   - name: English
     percent: 100
   - name: Spanish
-    percent: 50
+    percent: 90
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -163,7 +163,7 @@ awards:
     awarder: Stanford University
     icon: hero/academic-cap
     summary: |
-      Recognized for contributions to scaling laws in deep learning.
+    Recognized for academic excellence while pursuing an associate’s degree in cybersecurity.
 ---
 
 IT Field Technician supporting four Chicago school campuses with hands-on network, Chromebook, and Google Workspace administration. Experienced with Unifi, Peplink, VLAN/DNS troubleshooting, and Freshservice ticketing. Currently pursuing a cybersecurity degree and building automation tools (e.g., FastAPI/Docker projects) with a path toward SOC and blue-team roles.

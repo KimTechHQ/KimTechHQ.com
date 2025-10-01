@@ -1,16 +1,16 @@
 ---
 # Display name
-title: Alex Johnson
+title: Kimberly Cano
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Alex
-last_name: Johnson
+first_name: Kimberly
+last_name: Cano
 
 # Pronouns (optional)
-pronouns: he/him
+pronouns: she/her
 
 # Status emoji
 status:
@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: Field Technician | Cybersecurity Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -34,7 +34,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
+    url: 'kim@kimtechhq.com'
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/AlexAIResearch
@@ -48,10 +48,10 @@ profiles:
     url: https://orcid.org/0000-0002-1825-0097
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Network Security
+  - Incident Response
+  - Automation & Scripting
+  - IT Infrastructure
 
 education:
   - area: PhD Computer Science (AI Focus)
@@ -136,7 +136,7 @@ languages:
   - name: English
     percent: 100
   - name: Spanish
-    percent: 50
+    percent: 90
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -163,7 +163,7 @@ awards:
     awarder: Stanford University
     icon: hero/academic-cap
     summary: |
-      Recognized for contributions to scaling laws in deep learning.
+      Recognized for academic excellence while pursuing an associate’s degree in cybersecurity.
 ---
 
-Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.
+IT Field Technician supporting four Chicago school campuses with hands-on network, Chromebook, and Google Workspace administration. Experienced with Unifi, Peplink, VLAN/DNS troubleshooting, and Freshservice ticketing. Currently pursuing a cybersecurity degree and building automation tools (e.g., FastAPI/Docker projects) with a path toward SOC and blue-team roles.

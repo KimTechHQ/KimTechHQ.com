@@ -163,7 +163,7 @@ awards:
     awarder: Stanford University
     icon: hero/academic-cap
     summary: |
-    Recognized for academic excellence while pursuing an associate’s degree in cybersecurity.
+      Recognized for academic excellence while pursuing an associate’s degree in cybersecurity.
 ---
 
 IT Field Technician supporting four Chicago school campuses with hands-on network, Chromebook, and Google Workspace administration. Experienced with Unifi, Peplink, VLAN/DNS troubleshooting, and Freshservice ticketing. Currently pursuing a cybersecurity degree and building automation tools (e.g., FastAPI/Docker projects) with a path toward SOC and blue-team roles.

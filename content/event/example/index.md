@@ -1,6 +1,6 @@
 ---
 title: Example Talk
-
+active: false
 event: Hugo Blox Builder Conference
 event_url: https://example.org
 

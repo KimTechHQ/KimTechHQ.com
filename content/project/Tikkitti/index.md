@@ -4,10 +4,11 @@ date: 2025-09-26
 links:
   - type: site
     url: https://github.com/kimtechhq/tikkitti
-tags:
-  - Hugo
-  - HugoBlox
-  - Markdown
+
+  - icon: document-arrow-down         # optional icon
+    name: Proposal (PDF)   # text shown
+    url: uploads/ProjectProposal.pdf
+
 ---
 
 Tikkitti is a personal workflow helper for IT technicians.

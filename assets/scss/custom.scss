@@ -1,0 +1,22 @@
+/* === sanity check: turn blockquote left bar green so we know this file is live === */
+blockquote { border-left-color: #3ddc84 !important; }
+
+/* Remove decorative quotes (covers multiple theme variants) */
+.article-style blockquote::before,
+.article-style blockquote::after,
+.article-style blockquote p:first-of-type::before,
+.article-style blockquote p:last-of-type::after,
+.prose blockquote::before,
+.prose blockquote::after,
+.prose blockquote p:first-of-type::before,
+.prose blockquote p:last-of-type::after,
+.blockquote::before,
+.blockquote::after,
+.page-body blockquote::before,
+.page-body blockquote::after {
+  content: none !important;
+  background: none !important;
+}
+
+/* belt & suspenders */
+blockquote { quotes: "" "" !important; }

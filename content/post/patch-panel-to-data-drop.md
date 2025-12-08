@@ -444,3 +444,7 @@ YouTube video, 2018.
 <a id="ref18"></a>[18] JabberComm, Inc. *The Science Behind Electrons in Cat6 Cables and the Importance of Neat, Kink-Free Cabling.*  
 September 20, 2024.  
 <https://www.jabbercomm.com/blog/the-science-behind-electrons-in-cat6-cables-and-the-importance-of-neat-kink-free-cabling/>
+
+---
+
+<small>Disclaimer: AI tools were used in the development of this article to assist with drafting and refinement. All content has been reviewed and approved for accuracy.</small>

@@ -2,9 +2,21 @@
 title: "Practical Git and GitHub for Field Technicians"
 date: 2025-10-26
 tags: [git, github, version-control, documentation, field-tech]
-featured:
-  filename: "/uploads/GitBash.png"
-  alt: "Git Bash Thumbnail"
+cover:
+  image: "/uploads/GitBash.png"
+  position:
+    x: 50
+    y: 40
+  overlay:
+    enabled: true
+    type: "gradient"
+    opacity: 0.4
+    gradient: "bottom"
+  fade:
+    enabled: true
+    height: "80px"
+  icon:
+    name: "✨"
 ---
 
 # Introduction

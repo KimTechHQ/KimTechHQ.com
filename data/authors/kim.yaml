@@ -1,0 +1,13 @@
+slug: "kim"
+name:
+  display: "Kimberly Cano"
+  given: "Kimberly"
+  family: "Cano"
+  pronouns: "She/Her"
+role: "Cybersecurity Student | Field Tech"
+bio: "IT Field Technician supporting four Chicago school campuses with hands-on network, Chromebook, and Google Workspace administration. Experienced with Unifi, Peplink, VLAN/DNS troubleshooting, and Freshservice ticketing. Currently pursuing a cybersecurity degree and building automation tools (e.g., FastAPI/Docker projects) with a path toward SOC and blue-team roles."
+status:
+  icon: "🌟"
+is_owner: true
+schema: "hugoblox/author/v1"
+weight: null

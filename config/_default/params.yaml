@@ -1,58 +1,93 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
-
-# Appearance
+hugoblox:
+  schema: "2.0"
+  identity:
+    name: Kim
+    type: person
+    tagline: Kimberly Cano | Technologist
+    description: Field Technician | Cybersecurity Student
+  theme:
+    mode: system
+    pack: synthwave
+    colors:
+      primary: rose
+      secondary: ""
+      neutral: ""
+  typography:
+    font: sans
+    size: md
+  layout:
+    radius: md
+    spacing: comfortable
+    avatar_shape: circle
+  header:
+    enable: true
+    style: navbar
+    sticky: true
+    align: center
+    search: true
+    theme_toggle: true
+  footer:
+    style: minimal
+    language_switcher: true
+  copyright:
+    notice: © {year} {name}
+  content:
+    math:
+      enable: false
+    toc:
+      enable: true
+    reading_time:
+      enable: true
+  search:
+    enable: true
+  seo:
+    title: KimTechHQ
+    location:
+      address:
+        city: Chicago
+        region: IL
+        country: US
+    ai:
+      allow: []
 appearance:
   mode: system
   color: pink
-
-# SEO
 marketing:
   seo:
     site_type: Person
-    local_business_type: ''
-    org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    local_business_type: ""
+    org_name: ""
+    description: The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.
+    twitter: GetResearchDev
   analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
+    google_analytics: ""
+    baidu_tongji: ""
+    plausible: ""
+    fathom: ""
+    pirsch: ""
   verification:
-    google: ''
-    baidu: ''
-
-# Site header
+    google: ""
+    baidu: ""
 header:
   navbar:
     enable: true
-    block: 'navbar'
+    block: navbar
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
     logo:
-      text: 'Kimberly Cano'
-
-# Site footer
+      text: Kimberly Cano
 footer:
   copyright:
-    notice: '© {year} KimTechHQ. This work is licensed under {license}'
+    notice: © {year} KimTechHQ. This work is licensed under {license}
     license:
       enable: true
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
-
-# Localization
 locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
-
-# Site features
+  date_format: Jan 2, 2006
+  time_format: 3:04 PM
 features:
   math:
     enable: false

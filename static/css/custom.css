@@ -1,0 +1,11 @@
+/* Make Mermaid diagrams larger */
+.mermaid svg {
+    width: 200% !important;
+    max-width: none !important;
+    height: auto !important;
+}
+
+.mermaid {
+    transform: scale(1.6);
+    transform-origin: top left;
+}

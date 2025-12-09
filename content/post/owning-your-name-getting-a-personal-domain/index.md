@@ -94,60 +94,6 @@ If .com isn’t available or doesn’t fit your brand, modern TLDs like .io, .de
 ## Hosting Options: Static, Dynamic, or Self-Hosted
 Walk through GitHub Pages, VPS, or shared hosting. 
 
-```mermaid
-mindmap
-  root((Hosting Options))
-
-    %% Build from scratch?
-    Build from scratch?
-      Need server-side features?
-        Dynamic Hosting
-          AWS
-          Azure
-          VPS
-          Self-Hosting
-      No server-side features
-        Static HTML/CSS/JS
-        Static Hosting
-          GitHub Pages
-          Cloudflare Pages
-          Netlify
-
-    %% Not building from scratch
-    Use a template?
-      Yes
-        Static Site Generators
-          Hugo
-          HugoBlox
-          Jekyll
-          Astro
-      No
-        Use a website builder?
-          Yes
-            Wix
-            Squarespace
-            Carrd
-            Notion
-          No
-            Need full server control?
-              Yes
-                VPS
-                Self-Hosting
-              No
-                Managed Hosting
-                  Shared Hosting
-                  Simple Static Hosts
-
-    %% Cloud scaling
-    Cloud-scale needed?
-      Yes
-        AWS
-        Azure
-        Google Cloud
-      No
-        Stick with VPS / Self-Hosting
-```
-
 ## Setting Up DNS Records
 To make your domain actually do something, you set DNS records. These records tell the internet where to send traffic for your website, email, or other services. Most domains only need a few basic types, and each has a specific job.
 

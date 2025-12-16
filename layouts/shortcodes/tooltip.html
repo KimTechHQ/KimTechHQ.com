@@ -1,0 +1,31 @@
+{{/* Get the definition parameter from the shortcode call */}}
+{{ $def := .Get "definition" }}
+
+{{/* If no definition parameter is provided, use the inner content as the definition text */}}
+{{ if not $def }}{{ $def = (.Inner | plainify) }}{{ end }}
+
+{{/* Embed tooltip CSS styles directly in the HTML output */}}
+<style>
+/* Base tooltip container - positioned relative for absolute positioning of child elements */
+.hb-tooltip { position: relative; display: inline; cursor: help; }
+
+/* Hidden tooltip text that appears on hover - positioned absolutely above the word */
+/* transform centers it horizontally and moves it up slightly (-6px) for better spacing */
+/* opacity and visibility start at 0 (hidden) and transition to visible on hover */
+.hb-tooltip .hb-tooltip-text { position: absolute; left: 50%; transform: translateX(-50%) translateY(-6px); bottom: 100%; margin-bottom: 0.4rem; background: rgba(0, 0, 0, 0.88); color: #fff; padding: 0.4rem 0.6rem; border-radius: 0.35rem; font-size: 1.05rem; line-height: 1.2; white-space: nowrap; z-index: 99999; opacity: 0; visibility: hidden; transition: opacity 0.12s ease, visibility 0.12s ease; pointer-events: none; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); }
+
+/* Creates the arrow pointer below the tooltip that points down to the word */
+/* ::after is a pseudo-element (doesn't require HTML markup) */
+.hb-tooltip .hb-tooltip-text::after { content: ''; position: absolute; left: 50%; transform: translateX(-50%); top: 100%; border: 6px solid transparent; border-top-color: rgba(0, 0, 0, 0.88); }
+
+/* Show the tooltip on hover or when focused (via keyboard) */
+.hb-tooltip:hover .hb-tooltip-text, .hb-tooltip:focus-within .hb-tooltip-text { opacity: 1; visibility: visible; }
+
+/* Mobile/tablet responsive adjustments - smaller font and allow text to wrap */
+@media (max-width: 640px) { .hb-tooltip .hb-tooltip-text { font-size: 0.95rem; white-space: normal; max-width: 70vw; } }
+</style>
+
+{{/* Output the tooltip HTML structure */}}
+{{/* tabindex="0" makes the element keyboard-focusable for accessibility */}}
+{{/* role="tooltip" semantic HTML attribute helps screen readers identify this as a tooltip */}}
+<span class="hb-tooltip" tabindex="0"><span class="hb-tooltip-text" role="tooltip">{{ $def }}</span>{{ .Inner }}</span>

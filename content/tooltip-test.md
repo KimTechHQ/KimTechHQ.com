@@ -1,20 +1,17 @@
-/* Make Mermaid diagrams larger */
-.mermaid svg {
-    width: 200% !important;
-    max-width: none !important;
-    height: auto !important;
-}
+---
+title: "Tooltip Test"
+date: 2025-12-10T12:00:00Z
+draft: false
+---
 
-.mermaid {
-    transform: scale(1.6);
-    transform-origin: top left;
-}
+This page tests the `tooltip` shortcode. Hover over underlined words to see definitions.
 
-/* --- Tooltip styles (CSS-only, relies on :hover) --- */
+<style>
 .hb-tooltip {
   position: relative;
   display: inline;
   cursor: help;
+  border-bottom: 1px dotted currentColor;
 }
 
 .hb-tooltip .hb-tooltip-text {
@@ -53,11 +50,22 @@
   opacity: 1;
   visibility: visible;
 }
+</style>
 
-@media (max-width: 640px) {
-  .hb-tooltip .hb-tooltip-text {
-    font-size: 0.95rem;
-    white-space: normal;
-    max-width: 70vw;
-  }
-}
+Inline example:
+
+<span class="hb-tooltip" tabindex="0">DNSSEC<span class="hb-tooltip-text">DNS Security Extensions that prevent spoofing.</span></span>
+
+Markdown-processed inner content:
+
+<span class="hb-tooltip" tabindex="0">**HTML**<span class="hb-tooltip-text">Hypertext Markup Language.</span></span>
+
+Another example:
+
+<span class="hb-tooltip" tabindex="0">Definition<span class="hb-tooltip-text">A short explanation about tooltips.</span></span>
+
+Long content with punctuation:
+
+<span class="hb-tooltip" tabindex="0">LongDef<span class="hb-tooltip-text">This definition contains "quotes" and a longer explanation so you can see wrapping behavior.</span></span>
+
+End of test.

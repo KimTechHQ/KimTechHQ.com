@@ -26,3 +26,139 @@ blockquote { quotes: "" "" !important; }
   max-width: none !important;
   font-size: 500px !important;
 }
+
+/* Tooltip styles for inline definition popups */
+.hb-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+  outline: none;
+}
+
+.hb-tooltip .hb-tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  bottom: 100%;
+  margin-bottom: 0.4rem;
+  background: rgba(0,0,0,0.88);
+  color: #fff;
+  padding: .4rem .6rem;
+  border-radius: .35rem;
+  font-size: 1.05rem;
+  line-height: 1;
+  white-space: nowrap;
+  z-index: 9999;
+  transition: opacity .12s ease, transform .12s ease;
+  pointer-events: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.hb-tooltip .hb-tooltip-text::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  border: 6px solid transparent;
+  border-top-color: rgba(0,0,0,0.88);
+}
+
+.hb-tooltip:hover .hb-tooltip-text,
+.hb-tooltip:focus-within .hb-tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+.hb-tooltip--below .hb-tooltip-text {
+  top: 100%;
+  bottom: auto;
+  margin-top: 0.4rem;
+  transform: translateX(-50%) translateY(6px);
+}
+
+.hb-tooltip--below .hb-tooltip-text::after {
+  top: auto;
+  bottom: 100%;
+  border-bottom-color: rgba(0,0,0,0.88);
+  border-top-color: transparent;
+}
+
+@media (max-width: 640px) {
+  .hb-tooltip .hb-tooltip-text {
+    font-size: .95rem;
+    white-space: normal;
+    max-width: 70vw;
+  }
+}
+
+/* Fallback CSS-only tooltip using data-definition (works if JS is removed or sanitized) */
+.hb-tooltip[data-definition] {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.hb-tooltip[data-definition]::after {
+  content: attr(data-definition);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  bottom: 100%;
+  margin-bottom: 0.4rem;
+  background: rgba(0,0,0,0.88);
+  color: #fff;
+  padding: .4rem .6rem;
+  border-radius: .35rem;
+  font-size: 1.05rem;
+  line-height: 1;
+  white-space: nowrap;
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .12s ease, transform .12s ease;
+  pointer-events: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.hb-tooltip[data-definition]::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  border: 6px solid transparent;
+  border-top-color: rgba(0,0,0,0.88);
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hb-tooltip[data-definition]:hover::after,
+.hb-tooltip[data-definition]:focus::after,
+.hb-tooltip[data-definition]:focus-within::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.hb-tooltip[data-definition]:hover::before,
+.hb-tooltip[data-definition]:focus::before,
+.hb-tooltip[data-definition]:focus-within::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 640px) {
+  .hb-tooltip[data-definition]::after {
+    font-size: .95rem;
+    white-space: normal;
+    max-width: 70vw;
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+  }
+}

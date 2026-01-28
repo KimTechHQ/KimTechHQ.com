@@ -75,12 +75,6 @@ education:
     date_end: 2019-06-30
     summary: |
       Earned while dual-enrolled in high school. Provided hands-on training in CAD software, technical drawing, and design fundamentals, establishing an early foundation in applied technology and engineering concepts.
-  - area: High School Diploma
-    institution: George Westinghouse College Prep
-    date_start: 2015-09-01
-    date_end: 2019-06-30
-    summary: |
-      Completed a specialized engineering-focused track with coursework in applied engineering, physics, chemistry, environmental science, and advanced mathematics. Pursued science and technology subjects out of personal passion, establishing an early foundation that carried into later college studies in cybersecurity, computer engineering, and CAD design.
 work:
   - position: Field Technician
     company_name: Alltech Solutions

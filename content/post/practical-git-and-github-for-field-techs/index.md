@@ -1,6 +1,6 @@
 ---
 title: "Practical Git and GitHub for Field Technicians"
-date: 2025-10-26
+date: 2026-01-06
 tags: [git, github, version-control, documentation, field-tech]
 cover:
   image: "/uploads/GitBash.png"

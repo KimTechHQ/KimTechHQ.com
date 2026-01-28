@@ -1,6 +1,6 @@
 ---
 title: "Owning Your Name: Getting a Personal Domain and Setting It Up"
-date: 2025-10-26
+date: 2026-01-28
 tags: [domains, dns, personal-branding, cybersecurity, guide]
 ---
 
@@ -275,7 +275,7 @@ These four records cover almost everything a personal domain needs. Once they’
 
 ## Securing with HTTPS and DNSSEC
 
-Once your domain is connected to your site, the next step is securing it. Two key pieces of that are <span class="hb-tooltip" tabindex="0"><span class="hb-tooltip-text">A system that encrypts traffic between your visitor and your site.</span>HTTPS</span> and <span class="hb-tooltip" tabindex="0"><span class="hb-tooltip-text">DNS Security Extensions that prevent spoofing. </span>**DNSSEC**</span> . Both protect your visitors and strengthen your online identity, and they're easy to enable when using
+Once your domain is connected to your site, the next step is securing it. Two key pieces of that are <span class="hb-tooltip" tabindex="0"><span class="hb-tooltip-text">A system that encrypts traffic between your visitor and your site.</span>**HTTPS**</span> and <span class="hb-tooltip" tabindex="0"><span class="hb-tooltip-text">DNS Security Extensions that prevent spoofing. </span>**DNSSEC**</span> . Both protect your visitors and strengthen your online identity, and they're easy to enable when using
 modern providers like GitHub Pages and Cloudflare.
 
 ### HTTPS (SSL Certificates)

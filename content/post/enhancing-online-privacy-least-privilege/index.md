@@ -1,7 +1,9 @@
 ---
 title: "Enhancing Online Privacy: Applying Least Privilege to Your Digital Life"
-date: 2025-10-26
+date: 2035-10-26
 tags: [privacy, security, least-privilege, personal-security, commentary]
+draft: true
+
 ---
 
 ## Introduction: Why Privacy Is a Practice, Not a Setting

@@ -1,7 +1,5 @@
 ---
 title: "Building a Network with UniFi and a Third-Party Router"
-draft: true
-hidden: true
 date: 2030-10-26
 tags: [unifi, networking, routers, field-tech, configuration]
 ---
